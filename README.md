@@ -1,17 +1,19 @@
-# 👷 `worker-template` Hello World
-
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
-
-```
-wrangler generate projectname https://github.com/cloudflare/worker-template
-```
-
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+# 👷 `worker-template` COULDFLARE-TODO
 
 ### Run Project
 
+1. Install on your machine [wrangler](https://github.com/cloudflare/wrangler)
+
 ```
+npm install
+
 Wrangler preview --watch
 ```
+
+To publish you will need to authenticate your wrangler.
+
+```
+wrangler publish
+```
+
+Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
