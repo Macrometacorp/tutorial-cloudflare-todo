@@ -17,6 +17,6 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "jsc8": "^0.16.1"
+    "jsc8": "^0.16.2"
   }
 }
