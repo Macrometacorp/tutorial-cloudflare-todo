@@ -2,7 +2,7 @@
 
 ### Run Project
 
-1. Install on your machine [wrangler](https://github.com/cloudflare/wrangler)
+1. Install [Wrangler](https://github.com/cloudflare/wrangler) on your machine.
 
 ```
 npm install
