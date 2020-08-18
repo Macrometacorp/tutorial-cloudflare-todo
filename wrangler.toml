@@ -1,0 +1,7 @@
+name = "couldflare-todo"
+type = "webpack"
+webpack_config = "webpack.config.js"
+account_id = "92ec76d2493c9d4ec6750d442b1ec116"
+workers_dev = true
+# route = "/*"
+# zone_id = ""
