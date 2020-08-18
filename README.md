@@ -1,4 +1,4 @@
-# 👷 `worker-template` Couldflare-Todo [demo](https://couldflare-todo.solanki.workers.dev/)
+# 👷 `worker-template` Cloudflare-Todo  with Macrometa K/V DB[demo](https://couldflare-todo.solanki.workers.dev/)
 
 ### Run Project
 
