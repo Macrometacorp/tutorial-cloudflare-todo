@@ -1,4 +1,4 @@
-# 👷 `worker-template` Couldflare-Todo [url](https://couldflare-todo.solanki.workers.dev/)
+# 👷 `worker-template` Couldflare-Todo [demo](https://couldflare-todo.solanki.workers.dev/)
 
 ### Run Project
 
@@ -10,10 +10,20 @@ npm install
 Wrangler preview --watch
 ```
 
-To publish you will need to authenticate your wrangler.
+### Config [ref](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#config)
+
+Configure your global Cloudflare user. This is an interactive command that will prompt you for your API token.
 
 ```
-wrangler publish
+wrangler config [--api-key]
+```
+
+### Publish [ref](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#publish)
+
+Publish your Worker to Cloudflare. Several keys in your wrangler.toml determine whether you are publishing to a workers.dev subdomain or your own registered domain, proxied through Cloudflare.
+
+```
+wrangler publish [--env $ENVIRONMENT_NAME]
 ```
 
 Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
