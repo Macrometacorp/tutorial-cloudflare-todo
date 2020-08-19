@@ -84,8 +84,7 @@ const html = todos => `
 const defaultData = { todos: [] }
 
 // move this to ENV
-const API_KEY =
-  'demo.todoKey.53ca17c186924549e08ae21ab8499de8cda5b74a0a67a1846e1b355f00000000'
+const API_KEY = process.env.apiKey
 
 const client = new jsc8({
   url: 'https://gdn1.macrometa.io',
