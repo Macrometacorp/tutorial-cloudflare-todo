@@ -84,7 +84,7 @@ const html = todos => `
 const defaultData = { todos: [] }
 
 // move this to ENV
-const API_KEY = process.env.apiKey
+const API_KEY = process.env.API_KEY
 
 const client = new jsc8({
   url: 'https://gdn1.macrometa.io',

@@ -12,16 +12,10 @@ npm install
 
 1. Install [Wrangler](https://github.com/cloudflare/wrangler) on your machine.
 
-2. Add Environment variables in `webpack.config.js`
+2. Add API_KEY Environment variables in `.env`
 
    ```
-   ...
-   plugins: [
-       new EnvironmentPlugin({
-       apiKey:'',
-       }),
-   ],
-   ...
+   API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
    ```
 

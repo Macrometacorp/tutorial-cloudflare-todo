@@ -17,6 +17,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "jsc8": "^0.16.2"
   }
 }
