@@ -1,4 +1,4 @@
-# ToDo App using Cloudflare Workers with Macrometa GDN
+# Global ToDo App (Cloudflare Workers + Macrometa GDN)
 
 ## Demo
 
