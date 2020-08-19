@@ -1,4 +1,8 @@
-# 👷 `worker-template` Cloudflare-Todo  with Macrometa K/V DB[demo](https://couldflare-todo.solanki.workers.dev/)
+# ToDo App using Cloudflare Workers with Macrometa GDN
+
+## Demo
+
+[demo](https://couldflare-todo.solanki.workers.dev/)
 
 ## Run Project
 
