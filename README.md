@@ -24,6 +24,16 @@ npm install
    ```
    Wrangler preview --watch
    ```
+## Install JSC8
+
+JSC8 is added to the demo as default, you can view package.json to list all other dependencies.
+To add more dependencies run
+```
+npm install --save <package-name>
+
+// Example
+nmp install --save jsc8
+```
 
 ## Config [ref](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#config)
 
