@@ -1,3 +1,17 @@
+# A serverless todo App using CloudFlare Workers and Macrometa DB - a demonstration of low latency stateful data serving and edge functions
+
+A stateful serverless edge function (running on CloudFlare (https://www.stackpath.com/products/serverless-scripting/)  for serving low latency data from Macrometa's global database (www.macrometa.co) showcased as a "ToDo List App"
+
+Try the app - https://couldflare-todo.solanki.workers.dev/  (use the developer tools in chrome to measure network time for end to end latency - from click to edge function (on StackPath) to DB on Macrometa's service and back).  
+
+Depending on where you physically are (city, state, country) you will be routed to the closest CloudFlare Edge PoP where the serverless function will run to generate the HTML and serve data from the closest Macrometa database PoP.  In contrast to current web architectures where the back end (functions/lambdas or containers and the database) run in one region, this example app exploits global distribution and exeuction of functions (CF workers) and stateful globally distributed data (macrometa database). The end to end latency should be no more than 75ms per request for serving database requests via the function to your browser. 
+
+Prior art and motivation
+
+This is a simple TO DO app based on a tutorial by cloudflare (CF) on using CF Workers (https://workers.cloudflare.com/) and CF KV Store (https://developers.cloudflare.com/workers/reference/storage)
+
+
+
 # Global ToDo App (Cloudflare Workers + Macrometa GDN)
 
 ## Demo
