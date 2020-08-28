@@ -1,10 +1,19 @@
 # A serverless todo App using CloudFlare Workers and Macrometa DB - a demonstration of low latency stateful data serving and edge functions
 
-A stateful serverless edge function (running on CloudFlare (https://www.stackpath.com/products/serverless-scripting/)  for serving low latency data from Macrometa's global database (www.macrometa.co) showcased as a "ToDo List App"
+A stateful serverless edge function (running on CloudFlare (https://workers.cloudflare.com/) for serving low latency stateful globally replicated data from Macrometa's global database (www.macrometa.co) showcased as a "ToDo List App"
 
-Try the app - https://couldflare-todo.solanki.workers.dev/  (use the developer tools in chrome to measure network time for end to end latency - from click to edge function (on StackPath) to DB on Macrometa's service and back).  
+Try the app - https://couldflare-todo.solanki.workers.dev/  (use the developer tools in chrome to measure network time for end to end latency - from click to edge function (on CloudFlare) to a K/V DB on Macrometa's Global Data Network (GDN) service and back).  
 
-Depending on where you physically are (city, state, country) you will be routed to the closest CloudFlare Edge PoP where the serverless function will run to generate the HTML and serve data from the closest Macrometa database PoP.  In contrast to current web architectures where the back end (functions/lambdas or containers and the database) run in one region, this example app exploits global distribution and exeuction of functions (CF workers) and stateful globally distributed data (macrometa database). The end to end latency should be no more than 75ms per request for serving database requests via the function to your browser. 
+Depending on where you physically are (city, state, country) you will be routed to the closest CloudFlare Edge PoP where the serverless function will run to generate the HTML and serve data (puts, gets) from the closest Macrometa database PoP.  In contrast to current web architectures where the back end (functions/lambdas or containers and the database) run in one region, this example app exploits global distribution and exeuction of functions (CF workers) and stateful globally distributed data (macrometa database). The end to end latency should be no more than 75ms per request for serving database requests via the function to your browser. 
+
+Macrometa's global database service (GDN) offers key/value, DocumentDB, Graphs, Streams, Search and real time event processing as API services that can be incorporated in CloudFlare workers to enable sophesticated, data intensive apps that work with low latency, high levels of scalability and most importantly consistent, stateful data. 
+
+High level Differences between CloudFlare K/V and Macrometa:
+CloudFlare K/V is designed for use cases that frequently read and write very infrequently ( only 1 write per second per key  https://developers.cloudflare.com/workers/platform/limits ). 
+Macrometa offers an adaptive consistency model ranging from strong, to causal consistency.  
+Macrometa offers a multi model interface - it supports K/V, DynamoDB compatible API, Docs, Graphs, Streams, Stream and event processing and more.  This examples uses the K/V APi.
+Macrometa does not run on CloudFLare PoPs - it runs in datacenters and PoPs with close adjacency to CloudFlare PoPs - there is some additional network latency between a where a worker executes and the calls it makes to the Macrometa (a few single digit milliseconds) but overall Workers and Macrometa are 3x faster than worker and worker K/V.
+
 
 Prior art and motivation
 
