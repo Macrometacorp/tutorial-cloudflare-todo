@@ -87,7 +87,7 @@ const defaultData = { todos: [] }
 const API_KEY = process.env.API_KEY
 
 const client = new jsc8({
-  url: 'https://gdn1.macrometa.io',
+  url: 'https://smoke1.eng3.macrometa.io',
   apiKey: API_KEY,
   agent: fetch,
 })
