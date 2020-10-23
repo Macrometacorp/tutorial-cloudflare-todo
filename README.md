@@ -6,7 +6,7 @@ This tutorial demonstrates low latency stateful data serving and edge functions 
 
 The serverless edge function runs on CloudFlare as [Worker](https://workers.cloudflare.com/) serving data with low latency from Macrometa's GDN (www.macrometa.co)
 
-You can try the `ToDo List App` here - **[Demo](https://couldflare-todo.solanki.workers.dev)**
+You can try the `ToDo List App` here - **[Demo](https://couldflare-todo.macrometadev.workers.dev/)**
  
 Depending on where you are (i.e., city, state, country), your request will be routed to the closest CloudFlare Edge PoP where the serverless function will run to generate the HTML and serve data (`puts`, `gets`) from the closest Macrometa GDN PoP. 
 
