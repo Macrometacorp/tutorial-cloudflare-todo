@@ -1,7 +1,8 @@
-name = "couldflare-todo"
+name = "demo-todo-app"
 type = "webpack"
 webpack_config = "webpack.config.js"
-account_id = "b3dad22670b88424da9afddc967218a2"
-workers_dev = true
-# route = "/*"
-# zone_id = ""
+account_id = "xxxx"
+workers_dev = false
+zone_id = "xxxx"
+route = "xx.macrometa.io/*"
+vars = { API_KEY="xxxx", COLLECTION_NAME="todo" }
