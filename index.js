@@ -4,7 +4,7 @@ const jsc8 = require("jsc8")
 const defaultData = { todos: [] }
 
 const client = new jsc8({
-    url: "https://gdn.paas.macrometa.io",
+    url: "https://play.macrometa.io",
     apiKey: API_KEY,
     agent: fetch,
 })

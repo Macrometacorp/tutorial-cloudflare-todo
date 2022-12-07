@@ -22,7 +22,7 @@ Macrometa's global data service (GDN) offers `Key Value`, `Dynamo Mode`, `Docume
 
 -   Macrometa offers an adaptive consistency model ranging from `strong consistency to causal consistency`. Macrometa offers a multi-model interface i.e., it supports `KV`, `DynamoDB compatible API`, `Docs`, `Graphs`, `Search`, `Streams` and `Stream Processing`. This examples uses the KV APi.
 
-> Macrometa does not run on CloudFLare PoPs - it runs in datacenters and PoPs with close adjacency to CloudFlare PoPs - there is some additional network latency between a where a worker executes and the calls it makes to the Macrometa (a few single digit milliseconds) but overall Workers and Macrometa are 3x faster than Worker and Worker K/V.
+> Macrometa does not run on CloudFlare PoPs - it runs in datacenters and PoPs with close adjacency to CloudFlare PoPs - there is some additional network latency between a where a worker executes and the calls it makes to the Macrometa (a few single digit milliseconds) but overall Workers and Macrometa are 3x faster than Worker and Worker K/V.
 
 ## Steps
 
