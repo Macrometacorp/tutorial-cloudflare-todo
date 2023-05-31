@@ -5,4 +5,4 @@ account_id = "xxxx"
 workers_dev = false
 zone_id = "xxxx"
 route = "xx.macrometa.io/*"
-vars = { API_KEY="xxxx", COLLECTION_NAME="todo" }
+vars = { GDN_URL="https://xxxx.paas.macrometa.io", FABRIC_NAME="xxxx", API_KEY="xxxx", COLLECTION_NAME="todo" }
